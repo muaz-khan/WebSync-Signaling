@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{230FE286-DE5C-400E-AA10-6A2CEDF2D1C8}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SignalingServer</RootNamespace>
+    <AssemblyName>SignalingServer</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="admin-guest.aspx" />
+    <Content Include="DataChannel.aspx" />
+    <Content Include="Default.aspx" />
+    <Content Include="file-hangout.aspx" />
+    <Content Include="Pluginfree-Screen-Sharing.aspx" />
+    <Content Include="RTCMultiConnection.aspx" />
+    <Content Include="Scripts\file-hangout.js" />
+    <Content Include="Scripts\fm.js" />
+    <Content Include="Scripts\fm.websync.chat.js" />
+    <Content Include="Scripts\fm.websync.js" />
+    <Content Include="Scripts\fm.websync.subscribers.js" />
+    <Content Include="video-conferencing.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin-guest.aspx.cs">
+      <DependentUpon>admin-guest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="admin-guest.aspx.designer.cs">
+      <DependentUpon>admin-guest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataChannel.aspx.cs">
+      <DependentUpon>DataChannel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataChannel.aspx.designer.cs">
+      <DependentUpon>DataChannel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="file-hangout.aspx.cs">
+      <DependentUpon>file-hangout.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="file-hangout.aspx.designer.cs">
+      <DependentUpon>file-hangout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pluginfree-Screen-Sharing.aspx.cs">
+      <DependentUpon>Pluginfree-Screen-Sharing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pluginfree-Screen-Sharing.aspx.designer.cs">
+      <DependentUpon>Pluginfree-Screen-Sharing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RTCMultiConnection.aspx.cs">
+      <DependentUpon>RTCMultiConnection.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RTCMultiConnection.aspx.designer.cs">
+      <DependentUpon>RTCMultiConnection.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="video-conferencing.aspx.cs">
+      <DependentUpon>video-conferencing.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="video-conferencing.aspx.designer.cs">
+      <DependentUpon>video-conferencing.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebSyncEvents.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="FM.Server">
+      <HintPath>lib\FM.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="FM.WebSync.Chat.Server">
+      <HintPath>lib\FM.WebSync.Chat.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="FM.WebSync.Chat">
+      <HintPath>lib\FM.WebSync.Chat.dll</HintPath>
+    </Reference>
+    <Reference Include="FM.WebSync.Server">
+      <HintPath>lib\FM.WebSync.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="FM.WebSync.Subscribers.Server">
+      <HintPath>lib\FM.WebSync.Subscribers.Server.dll</HintPath>
+    </Reference>
+    <Reference Include="FM.WebSync.Subscribers">
+      <HintPath>lib\FM.WebSync.Subscribers.dll</HintPath>
+    </Reference>
+    <Reference Include="FM.WebSync">
+      <HintPath>lib\FM.WebSync.dll</HintPath>
+    </Reference>
+    <Reference Include="FM">
+      <HintPath>lib\FM.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>7078</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
